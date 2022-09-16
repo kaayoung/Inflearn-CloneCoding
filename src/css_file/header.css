@@ -1,0 +1,35 @@
+/* header */
+header { 
+    width: 100%;
+    /* margin: auto; */
+    border-bottom: 0.5px solid var(--dark-gray);
+    padding: 10px 0;
+}
+header * {
+    font-size: 14px;
+}
+#header-container {
+    width: 1025px ;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.header-left {
+    align-items: center;
+    color: var(--font-gray);
+}
+.header-left p {
+    margin: 0 10px;
+    font-weight: 300;
+    color: var(--dark-gray);
+    font-size: 12px;
+}
+.header-left a {
+    align-items: center;
+}
+.header-left svg {
+    margin-right: 5px;
+}
+.header-action {
+    color: black;
+}

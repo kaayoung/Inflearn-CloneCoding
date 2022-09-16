@@ -1,0 +1,70 @@
+/* nav */
+nav {
+    width: 100%;
+    padding: 5px 0;
+    position: sticky;
+
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px 0 hsl(0deg 0% 81% / 50%);
+}
+#nav-container {
+    width: 1025px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand-logo svg {
+    fill: var(--main-green);
+}
+.nav-bar {
+    justify-content: space-between;
+    flex-basis: 2;
+}
+.nav-bar_left {
+    margin-right: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar_menu {
+    padding: 20px 20px;
+}
+.nav-bar_right {
+    margin-right: 0;
+}
+.nav-search {
+    position: relative;
+    margin-right: 10px;
+}
+.nav-search input {
+    width: 148px;
+    height: 36px;
+    background-color: var(--gray);
+    padding: 5px 9px;
+    border-radius: 5px;
+}
+.nav-search span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.nav-bar_right {
+    align-items: center;
+}
+.nav-login {
+    height: 34px;
+    border: 1px solid #dbdbdb;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.nav-signup {
+    height: 34px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    background-color: #FF6D5A;
+    color:  white;
+    padding: 8px;
+}
