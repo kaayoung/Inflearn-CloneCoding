@@ -8,13 +8,17 @@ import RoadmapCourse_Item from '../components/RoadmapCourse_Item';
 import SearchLoading_Main from '../components/SearchLoading_Main';
 import SearchResult_Main from '../components/SearchResult_Main';
 import Search_Main from '../components/Search_Main';
-import {mainSectionItems, mainRoadmapItems, mainReadingItems , mainReviewItems , mainApplyItems}  from '../data/mainCourse_data'
+import {mainSectionItems, mainRoadmapItems, mainReadingItems , mainReviewItems , mainApplyItems , searchDummyData}  from '../data/mainCourse_data'
 
 function Main_Page(props) {
     
     const [search , setSearch] = useState("") ;
     const [searchLoading, setSearchLoading] = useState(false) ;
     const searchInputRef = useRef(null) ;
+
+    const filterCourseTitle = searchDummyData.filter(x => {
+        return x.title.replace(" ","").toLowerCase().includes(search.replace(" ","").toLowerCase())
+    })
 
     function handleInputSth(e) {
         setSearch(e.target.value) ;
@@ -92,7 +96,8 @@ function Main_Page(props) {
                         <span><iconify-icon icon="carbon:search"></iconify-icon></span>
                         {search && (
                             <>
-                                {searchLoading ? <SearchLoading_Main/> : <SearchResult_Main keyword={search} /> }
+                            
+                                {searchLoading ? <SearchLoading_Main filteredCourse={filterCourseTitle}/> : <SearchResult_Main keyword={search} /> }
                             </>
                         )}
                         
