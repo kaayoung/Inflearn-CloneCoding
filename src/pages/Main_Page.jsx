@@ -92,7 +92,7 @@ function Main_Page(props) {
                         <span><iconify-icon icon="carbon:search"></iconify-icon></span>
                         {search && (
                             <>
-                                {searchLoading ? <SearchLoading_Main/> : <SearchResult_Main  /> }
+                                {searchLoading ? <SearchLoading_Main/> : <SearchResult_Main keyword={search} /> }
                             </>
                         )}
                         
@@ -185,8 +185,7 @@ function Main_Page(props) {
                     </div>
                     <div className="reading-course_container">
                         <ul className="reading-course_list flex">
-                            {mainReadingItems.map((x) => {return (<ReadingMain_Item img={x.img} title={x.title} subtitle={x.subtitle} />)})}
-                           
+                            {mainReadingItems.map((x) => {return (<ReadingMain_Item img={x.img} title={x.title} subtitle={x.subtitle} />)})}                            
                         </ul>
                     </div>
                 </div>
