@@ -238,7 +238,7 @@ nav {
     width: 580px;
 
 }
-.search-input input {
+.inputDefault {
     background-color: #E7F7EE;
     width: 580px;
     height: 54px;
@@ -249,6 +249,65 @@ nav {
     font-size: 16px;
     color: #5f5f5f;
 }
+.inputSth { /* 검색창에서 한글자라도 입력했을 때 */
+    border-radius: 28px 28px 0 0 ;
+
+    background-color: white;
+    border-bottom: 0;
+    width: 580px;
+    height: 54px;
+    padding: 14px 20px;
+    color: black;
+    box-shadow: 0px 0px 8px 0 rgb(0 0 0 / 20%);    
+}
+.search-result {
+    /* display: none; */
+    animation: all 200ms ease-in-out;
+    padding: 20px 0;
+    background-color: white;
+    border: 1px solid #dedede;
+    border-top: 0;
+    box-shadow: 0px 0px 8px 0 rgb(0 0 0 / 20%);
+
+    border-radius: 0 0 28px 28px;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+}
+/* 검색 입력시 로딩 화면 */
+.search-loading {
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dedede;
+    border-top: 0;
+    box-shadow: 0px 0px 8px 0 rgb(0 0 0 / 20%);
+
+    border-radius: 0 0 28px 28px;
+    width: 100%;
+    height: 200px;
+}
+.search-loading img {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    animation: loadingRotate 350ms infinite ease-in-out alternate ;
+}
+/* .search-loading img:hover {
+    transition: all 250ms ease-in-out;
+    transform: rotateY( 180deg );
+} */
+@keyframes loadingRotate {
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+
 .search-input input:focus {
     background-color: white;
     box-shadow: 0 2px 8px 0 rgb(0 0 0 / 10%);
@@ -262,6 +321,87 @@ nav {
     right: 30px;
     font-size: 25px;
 }
+.search-result_list {
+    width: 100%;
+    padding: 5px 0;
+    flex-direction: column;
+    align-items: baseline;
+
+    border-bottom: 1px solid lightgray;
+}
+.search-result_list > h3  {
+    padding: 0 14px;
+}
+.search-result_list:last-child {
+    border-bottom: 0;
+}
+
+.search-result_list > h3 {
+    margin: 10px  0;
+    /* padding: 0 14px; */
+
+    text-align: start;
+    width: 100%;
+    font-weight: 600;
+    font-size: 12px;
+    color: #929292    ;
+    /* padding: 10px 0; */
+}
+.course-result_list {
+    text-align: start;
+    color: black;
+    font-size: 14px;
+    width: 100%;
+    /* padding: 5px 14px; */
+}
+
+/* 검색 결과 - 강의 리스트 아이템  */
+.search-course_item {
+    /* position: relative; */
+    width: 100%;
+    height: fit-content;
+}
+.course-result_item:hover {
+    background-color: var(--hover-gray);
+}
+.course-result_item {
+    padding: 10px 14px;
+
+}
+.search-course_item a {
+    flex-direction: row;
+}
+.course-result_item img {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: var(--font-gray);
+    margin-right: 10px;
+    width: 52px;
+    height: 34px;
+    /* display: block; */
+}
+.search-course_item span img {
+    width: 100%; 
+    height: 100%;
+}
+.search-course_info {
+    flex-direction: column;
+    justify-content: center;
+}
+.search-course_info h4 {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+.search-course_info p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #757575    ;
+}
+
+
+/* 검색 - 태그들 */
 .search-tags {
     width: 580px;
     margin: auto;
@@ -429,6 +569,7 @@ nav {
 }
 .roadmap-course_list {
     width: 100%;
+    overflow: hidden;
 }
 .roadmap-course_list li {
     width: 290.5px;
