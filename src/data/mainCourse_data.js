@@ -251,3 +251,183 @@ export const searchDummyData = [
         educator : "김정환"
     }
 ]
+
+export const courseListData  = [
+    {
+        title : "이것이 진짜 크롤링이다",
+        level : "입문",
+        topic : "데이터 수집, 처리, 데이터 분석" ,
+        goal : "Python, 웹크롤링", 
+        educator : "스파르타코딩" ,
+        rate : 4,
+        reviewTotal : 250 , 
+        price : 0 ,
+        count : 5400 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    } ,
+    {
+        title : "스프링 입문",
+        level : "초급",
+        topic : "백엔드" ,
+        goal : "스프링, 자바, MVC", 
+        educator : "김영한" ,
+        rate : 5,
+        reviewTotal : 200 , 
+        price : 100000 ,
+        count : 6000 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    } ,
+    {
+        title : "처음 만난 리액트",
+        level : "입문",
+        topic : "웹 프론트" ,
+        goal : "React", 
+        educator : "소플" ,
+        rate : 3,
+        reviewTotal : 200 , 
+        price : 0 ,
+        count : 200 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    } ,
+    {
+        title : "Flutter 앱 개발 완성",
+        level : "초급",
+        topic : "모바일 앱 개발" ,
+        goal : "Flutter", 
+        educator : "DevStory" ,
+        rate : 2,
+        reviewTotal : 100 , 
+        price : 10000 ,
+        count : 100 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    } ,
+    {
+        title : "이것이 진짜 크롤링이다",
+        level : "입문",
+        topic : "데이터 수집, 처리, 데이터 분석" ,
+        goal : "Python, 웹크롤링", 
+        educator : "스파르타코딩" ,
+        rate : 4,
+        reviewTotal : 250 , 
+        price : 0 ,
+        count : 5400 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    } ,
+    {
+        title : "스프링 입문",
+        level : "초급",
+        topic : "백엔드" ,
+        goal : "스프링, 자바, MVC", 
+        educator : "김영한" ,
+        rate : 5,
+        reviewTotal : 200 , 
+        price : 100000 ,
+        count : 6000 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    } ,
+    {
+        title : "스프링 입문",
+        level : "초급",
+        topic : "백엔드" ,
+        goal : "스프링, 자바, MVC", 
+        educator : "김영한" ,
+        rate : 5,
+        reviewTotal : 200 , 
+        price : 100000 ,
+        count : 6000 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    } ,
+    {
+        title : "스프링 입문",
+        level : "초급",
+        topic : "백엔드" ,
+        goal : "스프링, 자바, MVC", 
+        educator : "김영한" ,
+        rate : 5,
+        reviewTotal : 200 , 
+        price : 100000 ,
+        count : 6000 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    } ,
+    {
+        title : "스프링 입문",
+        level : "초급",
+        topic : "백엔드" ,
+        goal : "스프링, 자바, MVC", 
+        educator : "김영한" ,
+        rate : 5,
+        reviewTotal : 200 , 
+        price : 100000 ,
+        count : 6000 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    } ,
+    {
+        title : "스프링 입문",
+        level : "초급",
+        topic : "백엔드" ,
+        goal : "스프링, 자바, MVC", 
+        educator : "김영한" ,
+        rate : 5,
+        reviewTotal : 200 , 
+        price : 100000 ,
+        count : 6000 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    },
+    {
+        title : "스프링 입문",
+        level : "초급",
+        topic : "백엔드" ,
+        goal : "스프링, 자바, MVC", 
+        educator : "김영한" ,
+        rate : 5,
+        reviewTotal : 200 , 
+        price : 100000 ,
+        count : 6000 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    },
+    {
+        title : "스프링 입문",
+        level : "초급",
+        topic : "백엔드" ,
+        goal : "스프링, 자바, MVC", 
+        educator : "김영한" ,
+        rate : 5,
+        reviewTotal : 200 , 
+        price : 100000 ,
+        count : 6000 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    },
+    {
+        title : "스프링 입문",
+        level : "초급",
+        topic : "백엔드" ,
+        goal : "스프링, 자바, MVC", 
+        educator : "김영한" ,
+        rate : 5,
+        reviewTotal : 200 , 
+        price : 100000 ,
+        count : 6000 ,
+        img : "https://cdn.inflearn.com/public/courses/327774/cover/18a5e94e-002b-413b-80b3-d9e14724ff08/%EA%B0%95%EC%9D%98%EC%86%8C%EA%B0%9C-002%20(5).png"
+    }
+]
+
+
+
+export const courseDetailIntroduce = {
+    previewCnt : 2 ,
+    studentsCnt : 200 ,
+    toLearn : ["네이버 뉴스 데이터 수집 방법" , "주식 데이터 수집 방법", "쇼핑몰 데이터 수집 방법" , "웹 크롤링 기초 (Requests, Beautifulsoup 사용법)"] ,
+    courseContent : "고민하기 전에 먼저 들어보세요! 무료로 진행되는 강의이니 별로라면 더 안 들으면 그만입니다.하지만 아마 끝까지 듣게 되실 겁니다. 기초부터 심화 내용까지! 강의에서 모두 알려드릴 테니까요." ,
+    recommendTo : ["내가 원하는 사이트를 크롤링 하려니 오류만 나는 분", "데이터 수집을 처음부터 제대로 배워보고 싶은 분" , "뉴스 데이터 수집을 자동으로 하고 싶은 분"] ,
+    preKnowledge : ["파이썬 완전 기초 지식" , "스타트코딩 유튜브만 보고와도 가능"]  ,
+    educatorProfile : ["스타트코딩 유튜브만 보고와도 가능" , "한국능률협회(KMA) 강사" , "KT, 대상그룹, 에스오일 등 기업교육 강사"] ,
+    educatorImg : "http://www.wolyo.co.kr/news/photo/202006/106288_65303_3856.jpg" ,
+    postingDate : "2021년 10월 18일" ,
+    updateDate : "2022년 02월 19일" 
+}
+
+export const courseDetailCurriculum = [
+    [{section : "섹션 0. 강의소개"} , ["강의소개" , "프로그래밍을 위한 마음가짐" , "크롤링 주의사항"]],
+    [{section : "섹션 1. 환경설정"} , ["파이썬 설치" , "VS CODE 설치 및 사용방법" ]],
+    [{section : "섹션 3. 준비운동"} , ["크롤링을 위한 정말 쉬운 HTML - 뉴스 해킹" , "HTML을 파이썬으로 가져오자 : requests" , "내가 원하는 태그를 선택하자 : beautifulsoup"]]
+]

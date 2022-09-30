@@ -5,6 +5,8 @@
     --dark-gray : #E8EBEE ;
     --font-gray : #757575 ;
     --hover-gray : #e1e1e1 ;
+
+    --grid_unit: 100%/6;
 }
 
 @font-face {
@@ -18,6 +20,10 @@ html,body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+}
+
+.grid {
+    display: grid;
 }
 
 #root {

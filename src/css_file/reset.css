@@ -177,3 +177,9 @@ input:focus {
 .flex {
 	display: flex;
 }
+
+select {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}

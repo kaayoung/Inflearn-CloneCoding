@@ -8,17 +8,13 @@ import RoadmapCourse_Item from '../components/RoadmapCourse_Item';
 import SearchLoading_Main from '../components/SearchLoading_Main';
 import SearchResult_Main from '../components/SearchResult_Main';
 import Search_Main from '../components/Search_Main';
-import {mainSectionItems, mainRoadmapItems, mainReadingItems , mainReviewItems , mainApplyItems , searchDummyData}  from '../data/mainCourse_data'
+import {mainSectionItems, mainRoadmapItems, mainReadingItems , mainReviewItems , mainApplyItems }  from '../data/mainCourse_data'
 
 function Main_Page(props) {
     
     const [search , setSearch] = useState("") ;
     const [searchLoading, setSearchLoading] = useState(false) ;
     const searchInputRef = useRef(null) ;
-
-    const filterCourseTitle = searchDummyData.filter(x => {
-        return x.title.replace(" ","").toLowerCase().includes(search.replace(" ","").toLowerCase())
-    })
 
     function handleInputSth(e) {
         setSearch(e.target.value) ;
@@ -92,12 +88,12 @@ function Main_Page(props) {
                         배우고, 나누고, 성장하세요
                     </h1>
                     <div className="search-input ">
-                        <input onFocus={searchFocus} onChange={handleInputSth} className={(search ? "inputSth" : "inputDefault")} type="text" value={search} name="main-search" id="main-search" placeholder="배우고 싶은 지식을 입력해보세요."/>
+                        <input autocomplete='off' onFocus={searchFocus} onChange={handleInputSth} className={(search ? "inputSth" : "inputDefault")} type="text" value={search} name="main-search" id="main-search" placeholder="배우고 싶은 지식을 입력해보세요."/>
                         <span><iconify-icon icon="carbon:search"></iconify-icon></span>
                         {search && (
                             <>
                             
-                                {searchLoading ? <SearchLoading_Main filteredCourse={filterCourseTitle}/> : <SearchResult_Main keyword={search} /> }
+                                {searchLoading ? <SearchLoading_Main/> : <SearchResult_Main keyword={search} /> }
                             </>
                         )}
                         
@@ -169,7 +165,7 @@ function Main_Page(props) {
                         <ul className="roadmap-course_list flex">
                             {mainRoadmapItems.map((d) => (<RoadmapCourse_Item 
                             roadCourse_img={d.roadCourse_img} roadCourse_title={d.roadCourse_title}/>))}
-                             
+
                         </ul>
                         
                     </div>

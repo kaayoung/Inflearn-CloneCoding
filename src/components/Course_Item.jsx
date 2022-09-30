@@ -1,31 +1,42 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-function Course_Item({title , level , topic , goal , educator, rate, reviewTotal , price, count , img}) {
-    return (
-        <a href="#" className="flex">
+// title , level , topic , goal , educator, rate, reviewTotal , price, count , img
+function Course_Item(props) {
+    
+    const navigate = useNavigate() ;
+    
+    function clickCourseItem() {
+        navigate(`/courseList/${props.title}`, {
+            state : props 
+        }) ;
+    }
+
+    return (        
+        <div className="courseItem flex" onClick={clickCourseItem}>            
             <div className="course-hover">
-                <span className="course-hover_title">{title}</span>
+                <span className="course-hover_title">{props.title}</span>
                 <div className="course-hover_des flex">
-                    <span>{level}</span>
-                    <span>{topic}</span>
-                    <span>{goal}</span>
+                    <span>{props.level}</span>
+                    <span>{props.topic}</span>
+                    <span>{props.goal}</span>
                 </div>
-            </div>
-            <li className="course-item">
+            </div>            
+            <div className="course-item">
                 <div className="course-item_top">
-                    <img src={img} alt=""/>
-                    <h5>{title}</h5>
+                    <img src={props.img} alt=""/>
+                    <h5>{props.title}</h5>
                 </div>
                 <div className="course-item_bottom">
-                    <span>{educator}</span>
-                    <div className="course_rate">{"⭐️".repeat(rate)}({reviewTotal})</div>
-                    <div className="course_price">₩{price}</div>
+                    <span>{props.educator}</span>
+                    <div className="course_rate">{"⭐️".repeat(props.rate)}({props.reviewTotal})</div>
+                    <div className="course_price">{props.price ? "₩" + props.price : "무료"}</div>
                     <div className="course_info flex">
-                        <p>+{count}명</p>
+                        <p>+{props.count}명</p>
                     </div>
                 </div>
-            </li>
-        </a>
+            </div>
+        </div>
     );
 }
 
