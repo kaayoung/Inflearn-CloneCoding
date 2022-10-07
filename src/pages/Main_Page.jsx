@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { useState, useRef } from 'react';
 import Apply_Main_Item from '../components/Apply_Main_Item';
 import Course_Container from '../components/Course_Container';
@@ -18,11 +19,14 @@ function Main_Page(props) {
 
     function handleInputSth(e) {
         setSearch(e.target.value) ;
+    }
+
+    useEffect(() => {
         setSearchLoading(true) ;
         setTimeout(() => {
             setSearchLoading(false)
         }, 1000);
-    }
+    },[search])
 
     function searchFocus(e) {
         searchInputRef.current?.scrollIntoView({behavior : 'smooth'}) ;

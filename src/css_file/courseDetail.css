@@ -92,7 +92,7 @@
 }
 .courseDetailMid-nav_wrap {
     width: 1200px;    
-    margin: auto;
+    margin: auto;    
 }
 .courseDetailMid-nav_wrap {
     color: lightgray;
@@ -114,25 +114,30 @@
 .courseDetailMid-contents_container {
     width: 1200px;
     height: fit-content;
-    background-color: skyblue;
-    margin: auto;    
+    /* background-color: skyblue; */
+    margin: auto;  
 }
 .courseDetailMid-contents_left{
     flex-basis: 66%;
-    height: 1500px;
-    background-color: pink;
+    margin-top: 20px;
+    /* height: 1500px; */
+    /* background-color: pink; */
 }
 .courseDetailMid-contents_right{
-    flex-basis: 34%;
+    /* flex-basis: 34%; */
+    flex-basis: 332px;
     padding-left: 8px; 
     position: sticky;
     top: 75px ;
+    margin-left: 80px;
+    margin-bottom: 30px;
+    height: fit-content;    
 }
 /* >> 오른쪽 - 카드 (임직원.. & 수강하기 버튼...) */
 .courseDetailMid-studentFrom_wrap {  
     width: 100%;   
     align-content: center;  
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto 1fr auto;    
 }
 .courseDetailMid-studentFrom {
     cursor: pointer;
