@@ -1,8 +1,25 @@
 import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../css_file/nav.css'
+import LoginModal from './SignInOut&LogInOut/LoginModal';
 
 function Nav(props) {
+
+    const [loginOpen , setLoginOpen] = useState(false)
+
+    function openLogin() {
+        setLoginOpen(true)
+    }
+    function closeLogin() {
+        setLoginOpen(false)
+    }         
+    
+
+    function openLoginModal() {
+        // when you click this btn , the login modal will be opened
+    }
+
     return (
         <nav>            
             <div id="nav-container" className="flex">
@@ -26,12 +43,13 @@ function Nav(props) {
                         <span><iconify-icon icon="carbon:search"></iconify-icon></span>
                     </div>
                     
-                    <a href="#" className="nav-login">
+                    <button onClick={openLogin} href="#" className="nav-login">
                         로그인
-                    </a>
-                    <a href="#" className="nav-signup">
+                    </button>
+                    <LoginModal open={loginOpen} close={closeLogin} />
+                    <button href="#" className="nav-signup">
                         회원가입
-                    </a>
+                    </button>
                     
                 </div>                
             </div>
