@@ -1,4 +1,6 @@
-import React from 'react';
+// import React, { useEffect } from 'react';
+import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
+import { useState , useEffect } from 'react';
 import { useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
@@ -11,6 +13,10 @@ import {courseDetailIntroduce } from '../data/mainCourse_data' ;
 function CourseDetail_page(props) {
 
     const {state} = useLocation() ;
+    
+    // useState
+    const [scrollActive , setScrollActive] = useState(false) ;
+    const [scrollY , setScrollY] = useState(0) ; 
 
     //  useRef
     const detailIntro = useRef() ;
@@ -25,6 +31,29 @@ function CourseDetail_page(props) {
         }
         
     }
+
+    function handleScroll () {
+        console.log("gogo")
+        if (scrollY > 100) {
+            setScrollY(window.pageYOffset) ;
+            setScrollActive(true) ;                        
+        } else {
+            setScrollY(window.pageYOffset) ;
+            scrollActive(false) ;             
+        }
+    }
+
+    // useEffect 
+    useEffect(() => {        
+        function scrollListener () {
+            window.addEventListener("scroll" , handleScroll) ;            
+        }
+        scrollListener() ; 
+        return () => {
+            window.removeEventListener("scroll" , handleScroll) ;
+        } ;
+        });
+
 
     return (
         <Main id='courseDetail_wholePage'>            
@@ -64,12 +93,13 @@ function CourseDetail_page(props) {
             </section>
             <section className='courseDetail-middle'>
                 <div className="courseDetailMid-nav">
-                    <div className="courseDetailMid-nav_wrap flex" onClick={(e) => clickDetailNav(e.target.classList)}>
+                    <div className={"courseDetailMid-nav_wrap flex " + (scrollActive ? "nav-sticky " : " ")} onClick={(e) => clickDetailNav(e.target.classList)}>
+                    {/* <div className="courseDetailMid-nav_wrap flex" onClick={(e) => clickDetailNav(e.target.classList)}> */}
                         <span className="courseDetailMid-nav_intro detail-nav_active">강의소개</span>
                         <span className="courseDetailMid-nav_curri">커리큘럼</span>
                         <span className="courseDetailMid-nav_review">수강평 <span>{state.reviewTotal}</span> </span>
                         <span className="courseDetailMid-nav_commu">커뮤니티</span>
-                        <span className="courseDetailMid-nav_news">새소식</span>
+                        <span className="courseDetailMid-nav_news">새소식</span>                        
                     </div>
                 </div>
                 <div className="courseDetailMid-contents_container flex">
@@ -243,10 +273,17 @@ function CourseDetail_page(props) {
     );
 }
 
+
+
+
 export default CourseDetail_page;
 
 // Styled-Components 
 const Main = styled.main`
+
+
+    height: 100%;    
+
     .flex {
         display: flex;
     }
@@ -264,18 +301,19 @@ const Main = styled.main`
 
     .courseDetail-middle {        
         position: relative;
-        height: auto;
-        overflow: auto;
+        height: 100%;
+        overflow: auto;        
     }
 
     .courseDetailMid-nav {
         background-color: white;
-        position: sticky;                
+        /* position: sticky;                 */
         top: 0;
         left: 0;
         width: 100%;
         height: 42px;
     }
+
 `
 
 const MidLeft = styled.div`

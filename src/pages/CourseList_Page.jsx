@@ -1,7 +1,7 @@
 import React from 'react';
-import CourseListSearch from '../components/CourseListSearch';
-import CourseListContainer from '../components/CourseListContainer';
-import SideNav_CourseList from '../components/SideNav_CourseList';
+import CourseListSearch from '../components/main/CourseListSearch';
+// import CourseListContainer from '../components/CourseListContainer';
+import SideNav_CourseList from '../components/main/SideNav_CourseList';
 
 function CourseList(props) {
     return (

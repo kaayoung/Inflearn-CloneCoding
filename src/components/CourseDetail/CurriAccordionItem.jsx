@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useRef } from 'react';
 import { useState } from 'react';
+import { useRecoilState, useRecoilValue } from 'recoil';
 import styled from 'styled-components';
+import { accorAllClose } from '../../recoil/AcoorAllClose';
 import CurriAccordionUnitItem from './CurriAccordionUnitItem';
 
 
@@ -9,27 +12,39 @@ import CurriAccordionUnitItem from './CurriAccordionUnitItem';
  * @param {*} props secTitle , total , unit (array) 
  * @returns 
  */
+// (!accorOpen ? "unit-open" : "unit-close")
 
+function CurriAccordionItem({secTitle , total , unit , allClose}) {
+    
+    const unitRef = useRef() ;
 
-function CurriAccordionItem({secTitle , total , unit}) {    
-    const arr = Object.entries(unit)
+    // const isAllClosed = useRecoilValue(accorAllClose) ;
 
-    const [accorOpen , setAccorOpen] = useState(true)
+    const [unitOpen , setUnitOpen] = useState(true) ;    
+    const [accorOpen , setAccorOpen] = useRecoilState(accorAllClose) ;
 
     function clickAccorSection() {
-        setAccorOpen(open => !open)
+        setUnitOpen(x => !x)
+        
+        // if(accorOpen=="open") {
+        //     setAccorOpen("close") ;            
+        // } else if (accorOpen == "close") {
+        //     setAccorOpen("open") ;
+        // }
+        // console.log(accorOpen)
     }
+// className={"curr-accordion_unit " + (!accorOpen ? "unit-open" : "unit-close") }
 
     return (
         <div className="curr-accordion">
-            <CurrAccorSection opened={accorOpen} className="curr-accordion_section flex" onClick={(e) => {clickAccorSection(e.target)}}>
+            <CurrAccorSection opened={unitOpen} className="curr-accordion_section flex" onClick={(e) => {clickAccorSection(e.target)}}>                
                 <span className='flex-row_center'><iconify-icon icon="dashicons:arrow-up-alt2"></iconify-icon></span>
                 <h3 className='flex-row_center'>{secTitle}</h3>
                 <span className='curr-section_totalInfo'>{total}</span>
-            </CurrAccorSection>                
-            <div className={"curr-accordion_unit " + (accorOpen ? "unit-open" : "unit-close") }>                 
+            </CurrAccorSection>            
+            <div ref={unitRef} className={"curr-accordion_unit " + (!unitOpen ? "unit-open" : "unit-close") }>                
                 {unit.map(element => {                                                        
-                    return (<CurriAccordionUnitItem unitName={element.unitName} preview = {element.preview}/>)
+                    return (<CurriAccordionUnitItem key={element.unitName} unitName={element.unitName} preview = {element.preview}/>)
                 })}                
             </div>
         </div>

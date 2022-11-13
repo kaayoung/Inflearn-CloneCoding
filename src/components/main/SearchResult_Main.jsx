@@ -1,6 +1,6 @@
 import React from 'react';
-import SerachResult_CourseItem_Main from '../components/SerachResult_CourseItem_Main'
-import {searchDummyData} from '../data/mainCourse_data'
+import SerachResult_CourseItem_Main from './SerachResult_CourseItem_Main'
+import {searchDummyData} from '../../data/mainCourse_data'
 
 function SearchResult_Main(keyword) { // keyword
 

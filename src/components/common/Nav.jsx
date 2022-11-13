@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../css_file/nav.css'
-import LoginModal from './SignInOut&LogInOut/LoginModal';
+import '../../css_file/nav.css'
+import LoginModal from '../SignInOut&LogInOut/LoginModal';
 
 function Nav(props) {
 

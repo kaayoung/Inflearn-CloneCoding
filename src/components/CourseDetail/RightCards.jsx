@@ -2,7 +2,7 @@ import React from 'react';
 
 function RightCards({props}) {
     return (
-        <>
+        <div id="rightCard">
             <div className="courseDetailMid-studentFrom flex">
                 <div className="courseDetailMid-studentFrom_wrap grid">
                     <span className="studentFrom-img flex">
@@ -57,7 +57,7 @@ function RightCards({props}) {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { courseListData } from '../data/mainCourse_data' ;
+import { courseListData } from '../../data/mainCourse_data' ;
 import Course_Item from './Course_Item';
 
 function CourseListContainer(props) {    

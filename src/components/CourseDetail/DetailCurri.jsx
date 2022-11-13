@@ -1,8 +1,24 @@
 import React from 'react';
+import { useState } from 'react';
+import { useRecoilState , useRecoilValue } from 'recoil';
 import styled from 'styled-components';
+import { accorAllClose } from '../../recoil/AcoorAllClose';
 import CurriAccordion from '../CourseDetail/CurriAccordion'
 
 function DetailCurri(props) {
+
+    // const [allClose , setAllClose] = useRecoilState(accorAllClose) ;
+    
+    const isAllClosed = useRecoilValue(accorAllClose) ;
+
+    // const [allClose , setAllClose] = useState(false)
+
+    function onClickAllClose() {
+        // setAllClose(true) ;
+        isAllClosed(true)
+    }
+
+
     return (
         <>
             <TitleTemplate>
@@ -12,11 +28,11 @@ function DetailCurri(props) {
                 </div>
                 <div className="subtitle-box flex">
                     <p>이 강의는 영상, 수업 노트가 제공됩니다. 미리보기를 통해 콘텐츠를 확인해보세요.</p>
-                    <button type='button'>모두 접기</button>
+                    <button type='button' onClick={onClickAllClose}>모두 접기</button>
                 </div>
             </TitleTemplate>
 
-            <CurriAccordion/>
+            <CurriAccordion allClose={onClickAllClose}/>
         </>
     );
 }

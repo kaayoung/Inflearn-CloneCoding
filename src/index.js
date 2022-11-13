@@ -6,18 +6,20 @@ import './index.css'
 import './css_file/courseList.css' ;
 import './css_file/courseDetail.css' ;
 
-import Header from './components/Header';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
+import Header from './components/common/Header';
+import Nav from './components/common/Nav';
+import Footer from './components/common/Footer';
 import Main_Page from './pages/Main_Page';
 import CourseDetail_page from './pages/CourseDetail_page' ;
 import NotFound from './pages/NotFound'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CourseList from './pages/CourseList_Page';
+import { RecoilRoot } from 'recoil';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
+  <RecoilRoot>
     <BrowserRouter>
       <Header></Header>    
       <Nav></Nav>
@@ -29,5 +31,5 @@ root.render(
       </Routes>
       <Footer></Footer>
     </BrowserRouter>
-  
+  </RecoilRoot>
 );

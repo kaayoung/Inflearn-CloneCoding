@@ -1,20 +1,30 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState, useRef } from 'react';
-import Apply_Main_Item from '../components/Apply_Main_Item';
-import Course_Container from '../components/Course_Container';
-import ReadingMain_Item from '../components/ReadingMain_Item';
-import Review_Main_Item from '../components/Review_Main_Item';
-import RoadmapCourse_Item from '../components/RoadmapCourse_Item';
-import SearchLoading_Main from '../components/SearchLoading_Main';
-import SearchResult_Main from '../components/SearchResult_Main';
-import Search_Main from '../components/Search_Main';
+import Ad_Main from '../components/main/Ad_Main';
+import Apply_Main_Item from '../components/main/Apply_Main_Item';
+import Course_Container from '../components/main/Course_Container';
+import ReadingMain_Item from '../components/main/ReadingMain_Item';
+import Review_Main_Item from '../components/main/Review_Main_Item';
+import RoadmapCourse_Item from '../components/main/RoadmapCourse_Item';
+import SearchLoading_Main from '../components/main/SearchLoading_Main';
+import SearchResult_Main from '../components/main/SearchResult_Main';
+// import Search_Main from '../components/Search_Main';
 import {mainSectionItems, mainRoadmapItems, mainReadingItems , mainReviewItems , mainApplyItems }  from '../data/mainCourse_data'
 
 function Main_Page(props) {
+
+    const adSlides = [
+        "https://cdn.inflearn.com/public/main_sliders/7dc9730a-1a01-40a7-a509-4e8bceb73570/%5B%EB%A9%94%EC%9D%B8%ED%9E%88%EC%96%B4%EB%A1%9C%5D%EC%8B%A0%EA%B7%9C%EA%B0%95%EC%9D%98_main_521.gif" ,
+        "https://cdn.inflearn.com/public/main_sliders/78e964ab-3fdf-45be-ad2a-c8f425df9c98/%5B%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%92%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%85%E1%85%A9%5D%E1%84%82%E1%85%A1%E1%84%8B%E1%85%A6%E1%84%80%E1%85%A6%E1%84%86%E1%85%A1%E1%86%BD%E1%84%82%E1%85%B3%E1%86%AB%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B4_main_628.png",
+        "https://cdn.inflearn.com/public/main_sliders/68a15e47-7f40-444c-af73-60ab1acb8b3f/%5B%EB%B8%8C%EB%9E%9C%EB%93%9C%5D%EC%B1%84%EC%9A%A9%EC%9D%B4%EB%AF%B8%EC%A7%80%26%EA%B4%91%EA%B3%A0%EB%A6%AC%EB%89%B4%EC%96%BC_main_521.gif"
+    ]
     
     const [search , setSearch] = useState("") ;
     const [searchLoading, setSearchLoading] = useState(false) ;
+    const [currentIdx , setCurrentIdx]  = useState(0) ; // 광고 배너 슬라이드 
+    
+    
     const searchInputRef = useRef(null) ;
 
     function handleInputSth(e) {
@@ -28,46 +38,55 @@ function Main_Page(props) {
         }, 1000);
     },[search])
 
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            handleBannerSwipe(1);
+        }, 2000);
+        return () => clearTimeout(timeoutId);
+    })
+
+
     function searchFocus(e) {
         searchInputRef.current?.scrollIntoView({behavior : 'smooth'}) ;
+    }
+
+    function handleBannerSwipe(direction) {
+        // setCurrentIdx(currentIdx => currentIdx + direction) ;
+        handleSlide(currentIdx + direction)
+    }
+
+    function handleSlide (idx) {
+        if (idx < 0) {
+            idx = adSlides.length -1 ;            
+        } else if (idx > adSlides.length-1) {
+            idx = 0
+        }
+        setCurrentIdx(idx)
     }
 
     return (
         <main>            
             <section id="ad">
                 <div className="ad-banner flex">
-                    <a href="#" className="ad-banner_slide flex">
-                        <div className="ad-img">
-
-                        <img src="https://cdn.inflearn.com/public/main_sliders/7dc9730a-1a01-40a7-a509-4e8bceb73570/%5B%EB%A9%94%EC%9D%B8%ED%9E%88%EC%96%B4%EB%A1%9C%5D%EC%8B%A0%EA%B7%9C%EA%B0%95%EC%9D%98_main_521.gif" alt=""/>
-                        </div>
-                    </a>
-                    <a href="#" className="ad-banner_slide flex">
-                        <div className="ad-img">
-
-                        <img src="https://cdn.inflearn.com/public/main_sliders/78e964ab-3fdf-45be-ad2a-c8f425df9c98/%5B%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%92%E1%85%B5%E1%84%8B%E1%85%A5%E1%84%85%E1%85%A9%5D%E1%84%82%E1%85%A1%E1%84%8B%E1%85%A6%E1%84%80%E1%85%A6%E1%84%86%E1%85%A1%E1%86%BD%E1%84%82%E1%85%B3%E1%86%AB%E1%84%80%E1%85%A1%E1%86%BC%E1%84%8B%E1%85%B4_main_628.png" alt=""/>
-                        </div>
-                    </a>
-                    <a href="#" className="ad-banner_slide flex">
-                        <div className="ad-img">
-
-                        <img src="https://cdn.inflearn.com/public/main_sliders/68a15e47-7f40-444c-af73-60ab1acb8b3f/%5B%EB%B8%8C%EB%9E%9C%EB%93%9C%5D%EC%B1%84%EC%9A%A9%EC%9D%B4%EB%AF%B8%EC%A7%80%26%EA%B4%91%EA%B3%A0%EB%A6%AC%EB%89%B4%EC%96%BC_main_521.gif" alt=""/>
-                        </div>
-                    </a>
+                    <div className="ad-banner_track flex" style={{ transform: `translateX(${(-100 ) * ( currentIdx)}%)`}}>
+                        {adSlides.map((img, idx) => {
+                            return (<Ad_Main img={img} key={idx} />)
+                        })}
+                    </div>                    
                 </div>
                 <div className="ad-button">
                     <div id="ad-btn-container" className="flex">
                         <div className="ad-btn_left flex">
                             <div className="add-btn_page flex">
                                 <div className="add-btn_index">
-                                    <span className="add-page_curIdx">1</span>
+                                    <span className="add-page_curIdx">{currentIdx+1}</span>
                                     <span>/</span>
                                     <span className="add-page_totalIdx">3</span>
                                 </div>
                                 <div className="add-btn_move">
-                                    <span><iconify-icon icon="ep:arrow-left-bold"></iconify-icon></span>
+                                    <span onClick={() => handleBannerSwipe(-1)}><iconify-icon icon="ep:arrow-left-bold"></iconify-icon></span>
                                     <span><iconify-icon icon="fe:pause"></iconify-icon></span>
-                                    <span><iconify-icon icon="ep:arrow-right-bold"></iconify-icon></span>
+                                    <span onClick={() => handleBannerSwipe(1)}><iconify-icon icon="ep:arrow-right-bold"></iconify-icon></span>
                                 </div>
                             </div>
                             <div className="add-btn_divider"></div>

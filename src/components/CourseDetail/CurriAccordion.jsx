@@ -4,14 +4,14 @@ import styled from 'styled-components';
 import { curriData } from '../../data/courseDetail_data';
 import CurriAccordionItem from './CurriAccordionItem';
 
-function CurriAccordion(props) {
+function CurriAccordion({allClose}) {
 
 
 
     return (
-        <CurriTable>
+        <CurriTable >
             {curriData.map(x => {                                         
-                return (<CurriAccordionItem secTitle={x.secTitle} total = {x.total} unit = {x.unit} />)
+                return (<CurriAccordionItem key={x.id} secTitle={x.secTitle} total = {x.total} unit = {x.unit} allClose={allClose} />)
             })}                        
         </CurriTable>
     );

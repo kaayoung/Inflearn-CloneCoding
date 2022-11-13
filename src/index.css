@@ -138,6 +138,9 @@ nav {
     position: relative;
     width: 100%;
 }
+.ad-banner_track {
+    transition: all 300ms linear;
+}
 .ad-banner_slide {
     height: 320px;
     width: 100%;
@@ -150,6 +153,10 @@ nav {
 .ad-img {
     width: 100%;
     height: 320px;
+    justify-content: center;
+}
+.ad-banner_slide {
+    width: 100%;
 }
 .ad-banner_slide:nth-child(1) .ad-img {
     background-color: #FF7836;
@@ -158,12 +165,15 @@ nav {
     background-color: #00D077;
 }
 .ad-banner_slide:nth-child(3) .ad-img {
-    background-color: #00D077;
+    background-color: #00C471;
 }
 
 /* ad - button */
 .ad-button {
     padding: 10px 0;
+}
+.add-btn_move span {
+    cursor: pointer;
 }
 #ad-btn-container {
     width: 1025px;
