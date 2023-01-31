@@ -307,10 +307,7 @@ nav {
     height: 50px;
     animation: loadingRotate 350ms infinite ease-in-out alternate ;
 }
-/* .search-loading img:hover {
-    transition: all 250ms ease-in-out;
-    transform: rotateY( 180deg );
-} */
+
 @keyframes loadingRotate {
     from {
         transform: rotateY(0);

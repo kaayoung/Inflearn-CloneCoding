@@ -45,14 +45,19 @@ function CourseDetail_page(props) {
 
     // useEffect 
     useEffect(() => {        
-        function scrollListener () {
-            window.addEventListener("scroll" , handleScroll) ;            
-        }
-        scrollListener() ; 
+        const handleScroll = () => {
+            // setState는 이전과 같은 값으로 바꾸려 하면 리렌더링을 하지 않도록 최적화되어 있기 때문에,
+            // `true`, `false` 사이에서 바뀔 때만 리렌더링이 된다는 것이 보장됩니다.
+            console.log("fsdfd")
+            setScrollActive(window.scrollY > 100);
+        };
+    
+        window.addEventListener('scroll', handleScroll);
         return () => {
-            window.removeEventListener("scroll" , handleScroll) ;
-        } ;
-        });
+        window.removeEventListener('scroll', handleScroll);        
+        }
+
+    }, []); 
 
 
     return (
@@ -312,6 +317,18 @@ const Main = styled.main`
         left: 0;
         width: 100%;
         height: 42px;
+    }
+
+    .nav-sticky {
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    .courseDetailMid-nav_wrap {
+        position : sticky ;
+        top: 0; 
+        left: 0;
     }
 
 `

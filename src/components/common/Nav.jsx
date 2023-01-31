@@ -16,9 +16,6 @@ function Nav(props) {
     }         
     
 
-    function openLoginModal() {
-        // when you click this btn , the login modal will be opened
-    }
 
     return (
         <nav>            
