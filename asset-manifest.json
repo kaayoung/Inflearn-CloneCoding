@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/YU_clonecoding_React_01/static/css/main.18a1f34e.css",
+    "main.js": "/YU_clonecoding_React_01/static/js/main.4bdf3c6f.js",
+    "index.html": "/YU_clonecoding_React_01/index.html",
+    "main.18a1f34e.css.map": "/YU_clonecoding_React_01/static/css/main.18a1f34e.css.map",
+    "main.4bdf3c6f.js.map": "/YU_clonecoding_React_01/static/js/main.4bdf3c6f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.18a1f34e.css",
+    "static/js/main.4bdf3c6f.js"
+  ]
+}
