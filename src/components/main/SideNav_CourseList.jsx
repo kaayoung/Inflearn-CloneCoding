@@ -14,24 +14,24 @@ function SideNav_CourseList(props) {
                                     <span><iconify-icon icon="fe:arrow-right"></iconify-icon></span></div>
                             </div>
                             <div className="subject-item_sub list-hidden">
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">웹 개발</a></div>
-                                <div className="subject-item_link"><a href="#">프론트엔드</a></div>
-                                <div className="subject-item_link"><a href="#">백엔드</a></div>
-                                <div className="subject-item_link"><a href="#">풀스택</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">웹 개발</a></div>
+                                <div className="subject-item_link"><a href="/">프론트엔드</a></div>
+                                <div className="subject-item_link"><a href="/">백엔드</a></div>
+                                <div className="subject-item_link"><a href="/">풀스택</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
                             </div>
                         </div>
                         <div className="subject-item">
@@ -40,11 +40,11 @@ function SideNav_CourseList(props) {
                                     <span><iconify-icon icon="fe:arrow-right"></iconify-icon></span></div>
                             </div>
                             <div className="subject-item_sub list-hidden">
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">웹 개발</a></div>
-                                <div className="subject-item_link"><a href="#">프론트엔드</a></div>
-                                <div className="subject-item_link"><a href="#">백엔드</a></div>
-                                <div className="subject-item_link"><a href="#">풀스택</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">웹 개발</a></div>
+                                <div className="subject-item_link"><a href="/">프론트엔드</a></div>
+                                <div className="subject-item_link"><a href="/">백엔드</a></div>
+                                <div className="subject-item_link"><a href="/">풀스택</a></div>
                             </div>
                         </div>
                         <div className="subject-item">
@@ -53,11 +53,11 @@ function SideNav_CourseList(props) {
                                     <span><iconify-icon icon="fe:arrow-right"></iconify-icon></span></div>
                             </div>
                             <div className="subject-item_sub list-hidden">
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">웹 개발</a></div>
-                                <div className="subject-item_link"><a href="#">프론트엔드</a></div>
-                                <div className="subject-item_link"><a href="#">백엔드</a></div>
-                                <div className="subject-item_link"><a href="#">풀스택</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">웹 개발</a></div>
+                                <div className="subject-item_link"><a href="/">프론트엔드</a></div>
+                                <div className="subject-item_link"><a href="/">백엔드</a></div>
+                                <div className="subject-item_link"><a href="/">풀스택</a></div>
                             </div>
                         </div>
                         <div className="subject-item">
@@ -66,11 +66,11 @@ function SideNav_CourseList(props) {
                                     <span><iconify-icon icon="fe:arrow-right"></iconify-icon></span></div>
                             </div>
                             <div className="subject-item_sub list-hidden">
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">웹 개발</a></div>
-                                <div className="subject-item_link"><a href="#">프론트엔드</a></div>
-                                <div className="subject-item_link"><a href="#">백엔드</a></div>
-                                <div className="subject-item_link"><a href="#">풀스택</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">웹 개발</a></div>
+                                <div className="subject-item_link"><a href="/">프론트엔드</a></div>
+                                <div className="subject-item_link"><a href="/">백엔드</a></div>
+                                <div className="subject-item_link"><a href="/">풀스택</a></div>
                             </div>
                         </div>
                         <div className="subject-item">
@@ -79,11 +79,11 @@ function SideNav_CourseList(props) {
                                     <span><iconify-icon icon="fe:arrow-right"></iconify-icon></span></div>
                             </div>
                             <div className="subject-item_sub list-hidden">
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">웹 개발</a></div>
-                                <div className="subject-item_link"><a href="#">프론트엔드</a></div>
-                                <div className="subject-item_link"><a href="#">백엔드</a></div>
-                                <div className="subject-item_link"><a href="#">풀스택</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">웹 개발</a></div>
+                                <div className="subject-item_link"><a href="/">프론트엔드</a></div>
+                                <div className="subject-item_link"><a href="/">백엔드</a></div>
+                                <div className="subject-item_link"><a href="/">풀스택</a></div>
                             </div>
                         </div>
                         <div className="subject-item">
@@ -92,11 +92,11 @@ function SideNav_CourseList(props) {
                                     <span><iconify-icon icon="fe:arrow-right"></iconify-icon></span></div>
                             </div>
                             <div className="subject-item_sub list-hidden">
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">웹 개발</a></div>
-                                <div className="subject-item_link"><a href="#">프론트엔드</a></div>
-                                <div className="subject-item_link"><a href="#">백엔드</a></div>
-                                <div className="subject-item_link"><a href="#">풀스택</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">웹 개발</a></div>
+                                <div className="subject-item_link"><a href="/">프론트엔드</a></div>
+                                <div className="subject-item_link"><a href="/">백엔드</a></div>
+                                <div className="subject-item_link"><a href="/">풀스택</a></div>
                             </div>
                         </div>
                         <div className="subject-item">
@@ -105,11 +105,11 @@ function SideNav_CourseList(props) {
                                     <span><iconify-icon icon="fe:arrow-right"></iconify-icon></span></div>
                             </div>
                             <div className="subject-item_sub list-hidden">
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">웹 개발</a></div>
-                                <div className="subject-item_link"><a href="#">프론트엔드</a></div>
-                                <div className="subject-item_link"><a href="#">백엔드</a></div>
-                                <div className="subject-item_link"><a href="#">풀스택</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">웹 개발</a></div>
+                                <div className="subject-item_link"><a href="/">프론트엔드</a></div>
+                                <div className="subject-item_link"><a href="/">백엔드</a></div>
+                                <div className="subject-item_link"><a href="/">풀스택</a></div>
                             </div>
                         </div>
                         <div className="subject-item">
@@ -118,11 +118,11 @@ function SideNav_CourseList(props) {
                                     <span><iconify-icon icon="fe:arrow-right"></iconify-icon></span></div>
                             </div>
                             <div className="subject-item_sub list-hidden">
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">웹 개발</a></div>
-                                <div className="subject-item_link"><a href="#">프론트엔드</a></div>
-                                <div className="subject-item_link"><a href="#">백엔드</a></div>
-                                <div className="subject-item_link"><a href="#">풀스택</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">웹 개발</a></div>
+                                <div className="subject-item_link"><a href="/">프론트엔드</a></div>
+                                <div className="subject-item_link"><a href="/">백엔드</a></div>
+                                <div className="subject-item_link"><a href="/">풀스택</a></div>
                             </div>
                         </div>
                         <div className="subject-item">
@@ -131,11 +131,11 @@ function SideNav_CourseList(props) {
                                     <span><iconify-icon icon="fe:arrow-right"></iconify-icon></span></div>
                             </div>
                             <div className="subject-item_sub list-hidden">
-                                <div className="subject-item_link"><a href="#">ALL</a></div>
-                                <div className="subject-item_link"><a href="#">웹 개발</a></div>
-                                <div className="subject-item_link"><a href="#">프론트엔드</a></div>
-                                <div className="subject-item_link"><a href="#">백엔드</a></div>
-                                <div className="subject-item_link"><a href="#">풀스택</a></div>
+                                <div className="subject-item_link"><a href="/">ALL</a></div>
+                                <div className="subject-item_link"><a href="/">웹 개발</a></div>
+                                <div className="subject-item_link"><a href="/">프론트엔드</a></div>
+                                <div className="subject-item_link"><a href="/">백엔드</a></div>
+                                <div className="subject-item_link"><a href="/">풀스택</a></div>
                             </div>
                         </div>
                     </div>

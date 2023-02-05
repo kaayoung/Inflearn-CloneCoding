@@ -3,7 +3,7 @@ import React from 'react';
 function ReadingMain_Item({img , title , subtitle}) {
     return (
         <li>
-            <a href="#" className="reading-course_item">                                    
+            <a href="/" className="reading-course_item">                                    
                     <div className="reading-item_img">
                         <img src={img} alt=""/>
                     </div>

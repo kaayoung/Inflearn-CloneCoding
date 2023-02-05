@@ -36,11 +36,11 @@ function LoginModal({open, close}) {
                                     <button className='subBtn' type="submit">로그인</button>                                                    
                                 </form>
                                 <p className="more">
-                                    <a href="#">아이디(이메일) 찾기</a>
+                                    <a href="/">아이디(이메일) 찾기</a>
                                     <span className='divider'> | </span>
-                                    <a href="#">비밀번호 찾기</a>
+                                    <a href="/">비밀번호 찾기</a>
                                     <span className='divider'> | </span>
-                                    <a href="#">회원가입 찾기</a>
+                                    <a href="/">회원가입 찾기</a>
                                 </p>
                                 <div className="social-login">
                                     <hr />

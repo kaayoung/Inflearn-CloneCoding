@@ -7,49 +7,49 @@ function Footer(props) {
                 <div className="footer-menu_list">
                     <div className="footer-menu_title">인프런</div>
                     <div className="footer-menu_items flex">
-                        <a className="footer-menu_item" href="#">공지사항</a>
-                        <a className="footer-menu_item" href="#">인프런 소개</a>
-                        <a className="footer-menu_item" href="#">인프랩 실Log</a>
-                        <a className="footer-menu_item" href="#">인프랩 채용</a>
+                        <a className="footer-menu_item" href="/">공지사항</a>
+                        <a className="footer-menu_item" href="/">인프런 소개</a>
+                        <a className="footer-menu_item" href="/">인프랩 실Log</a>
+                        <a className="footer-menu_item" href="/">인프랩 채용</a>
                     </div>
                 </div>
                 <div className="footer-menu_list">
                     <div className="footer-menu_title">고객센터</div>
                     <div className="footer-menu_items flex">
-                        <a className="footer-menu_item" href="#">자주묻는 질문</a>
-                        <a className="footer-menu_item" href="#">수료증 확인</a>
-                        <a className="footer-menu_item" href="#">이용약관</a>
-                        <a className="footer-menu_item" href="#">개인정보취급방침</a>
-                        <a className="footer-menu_item" href="#">저작권 신고 센터</a>
+                        <a className="footer-menu_item" href="/">자주묻는 질문</a>
+                        <a className="footer-menu_item" href="/">수료증 확인</a>
+                        <a className="footer-menu_item" href="/">이용약관</a>
+                        <a className="footer-menu_item" href="/">개인정보취급방침</a>
+                        <a className="footer-menu_item" href="/">저작권 신고 센터</a>
                     </div>
                 </div>
                 <div className="footer-menu_list">
                     <div className="footer-menu_title">신청하기</div>
                     <div className="footer-menu_items flex">
-                        <a className="footer-menu_item" href="#">지식공유참여</a>
-                        <a className="footer-menu_item" href="#">멘토링 소개</a>
-                        <a className="footer-menu_item" href="#">인프런 비즈니스</a>
-                        <a className="footer-menu_item" href="#">인프런 X 대학교</a>
-                        <a className="footer-menu_item" href="#">인프런 X AWS 제휴</a>
+                        <a className="footer-menu_item" href="/">지식공유참여</a>
+                        <a className="footer-menu_item" href="/">멘토링 소개</a>
+                        <a className="footer-menu_item" href="/">인프런 비즈니스</a>
+                        <a className="footer-menu_item" href="/">인프런 X 대학교</a>
+                        <a className="footer-menu_item" href="/">인프런 X AWS 제휴</a>
                     </div>
                 </div>
                 <div className="footer-menu_list">
                     <div className="footer-menu_title">학습하기</div>
                     <div className="footer-menu_items flex">
-                        <a className="footer-menu_item" href="#">IT 프로그래밍</a>
-                        <a className="footer-menu_item" href="#">크리에이티브</a>
-                        <a className="footer-menu_item" href="#">업무스킬</a>
-                        <a className="footer-menu_item" href="#">수강코드 등록</a>
-                        <a className="footer-menu_item" href="#">포인트코드 등록</a>
+                        <a className="footer-menu_item" href="/">IT 프로그래밍</a>
+                        <a className="footer-menu_item" href="/">크리에이티브</a>
+                        <a className="footer-menu_item" href="/">업무스킬</a>
+                        <a className="footer-menu_item" href="/">수강코드 등록</a>
+                        <a className="footer-menu_item" href="/">포인트코드 등록</a>
                     </div>
                 </div>
                 <div className="footer-menu_list">
                     <div className="footer-menu_title">커뮤니티</div>
                     <div className="footer-menu_items flex">
-                        <a className="footer-menu_item" href="#">학습로드맵</a>
-                        <a className="footer-menu_item" href="#">질문 & 답변</a>
-                        <a className="footer-menu_item" href="#">수강평 모아보기</a>
-                        <a className="footer-menu_item" href="#">강의 기능요청</a>
+                        <a className="footer-menu_item" href="/">학습로드맵</a>
+                        <a className="footer-menu_item" href="/">질문 & 답변</a>
+                        <a className="footer-menu_item" href="/">수강평 모아보기</a>
+                        <a className="footer-menu_item" href="/">강의 기능요청</a>
                     </div>
                 </div>
             </div>

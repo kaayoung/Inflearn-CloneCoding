@@ -76,7 +76,7 @@ function DetailIntro(props) {
             <div className="detail-intro_edu">
                 <DetailContentsTitle>
                     <div className='detail-titleAndImg flex'>
-                        <h1>안녕하세요 <br/> <a target='_blank' href="#">{state.educator}</a> 입니다</h1>
+                        <h1>안녕하세요 <br/>{state.educator}입니다</h1>
                         <div><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" /></div>
                     </div>
                     <div className='flex-column'>                                        

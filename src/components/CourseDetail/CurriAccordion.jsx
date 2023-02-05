@@ -1,5 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
 import styled from 'styled-components';
 import { curriData } from '../../data/courseDetail_data';
 import CurriAccordionItem from './CurriAccordionItem';

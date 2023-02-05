@@ -139,7 +139,7 @@ function Main_Page(props) {
                 <div className="course_container">
                     <div className="course-title flex">
                         <h2>무료강의? 오히려 좋아✨</h2>
-                        <a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon></a>
+                        <a href="/"><iconify-icon icon="ep:arrow-right"></iconify-icon></a>
                     </div>
                     <div className="course-subtitle">
                         <h3>무료 강의부터 가볍게 시작해 보세요.</h3>
@@ -158,7 +158,7 @@ function Main_Page(props) {
                 <div className="course_container">
                     <div className="course-title flex">
                         <h2>왕초보도 할 수 있어요💪</h2>
-                        <a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon></a>
+                        <a href="/"><iconify-icon icon="ep:arrow-right"></iconify-icon></a>
                     </div>
                     <div className="course-subtitle">
                         <h3>이미 검증된 쉽고 친절한 입문 강의!!</h3>
@@ -178,7 +178,7 @@ function Main_Page(props) {
                 <div className="roadmap_container course_container">
                     <div className="course-title flex">
                         <h2>기본부터 실무까지 제시해주는 로드맵🏃🏻‍♀️ <span>RoadMap!!</span></h2>
-                        <a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon></a>
+                        <a href="/"><iconify-icon icon="ep:arrow-right"></iconify-icon></a>
                     </div>
                     <div className="course-subtitle">
                         <h3>이미 검증된 쉽고 친절한 입문 강의!!</h3>
@@ -205,7 +205,7 @@ function Main_Page(props) {
                 <div className="reading_container course_container">
                     <div className="course-title flex">
                         <h2>읽어보기</h2>
-                        <a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon></a>
+                        <a href="/"><iconify-icon icon="ep:arrow-right"></iconify-icon></a>
                     </div>
                     <div className="reading-course_container">
                         <ul className="reading-course_list flex">
@@ -219,7 +219,7 @@ function Main_Page(props) {
                 <div className="course_container">
                     <div className="course-title flex">
                         <h2>따끈따끈, 신규 강의를 만나보세요! 🙋🏻‍♀️ <span>NEW!!</span></h2>
-                        <a href="#"><iconify-icon icon="ep:arrow-right"></iconify-icon></a>
+                        <a href="/"><iconify-icon icon="ep:arrow-right"></iconify-icon></a>
                     </div>
                     <Course_Container dataArr={mainSectionItems}/>
                     <div className="course-arrow_next">                            
@@ -245,8 +245,8 @@ function Main_Page(props) {
                             <div>오픈 플랫폼의 이점을 통해 다양성과 경제성을 모두 높입니다.</div>    
                         </div>                        
                         <div className="courseReview-moreLink">
-                            <a href="#" className="courseReview_link">수강평 더보기 </a>
-                            <a href="#" className="courseReview_link">기능/강좌 요청하기 </a>
+                            <a href="/" className="courseReview_link">수강평 더보기 </a>
+                            <a href="/" className="courseReview_link">기능/강좌 요청하기 </a>
                         </div>
                     </div>
                     
@@ -264,7 +264,7 @@ function Main_Page(props) {
                             <div>지식을 나눠주세요.</div>
                             <div>쉽게 시작하고 합당한 보상을 받을 수 있어요.</div>
                         </div>
-                        <a href="#" className="bottomBanner-goLink">
+                        <a href="/" className="bottomBanner-goLink">
                             지식공유 알아보기
                         </a>
                     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
-import { useState } from 'react';
-import { useRecoilState , useRecoilValue } from 'recoil';
+// import { useState } from 'react';
+import { useRecoilValue } from 'recoil';
 import styled from 'styled-components';
 import { accorAllClose } from '../../recoil/AcoorAllClose';
 import CurriAccordion from '../CourseDetail/CurriAccordion'

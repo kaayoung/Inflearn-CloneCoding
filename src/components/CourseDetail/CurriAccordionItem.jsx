@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
 import { useRef } from 'react';
 import { useState } from 'react';
-import { useRecoilState, useRecoilValue } from 'recoil';
+import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
 import { accorAllClose } from '../../recoil/AcoorAllClose';
 import CurriAccordionUnitItem from './CurriAccordionUnitItem';
@@ -21,7 +20,7 @@ function CurriAccordionItem({secTitle , total , unit , allClose}) {
     // const isAllClosed = useRecoilValue(accorAllClose) ;
 
     const [unitOpen , setUnitOpen] = useState(true) ;    
-    const [accorOpen , setAccorOpen] = useRecoilState(accorAllClose) ;
+    // const [accorOpen , setAccorOpen] = useRecoilState(accorAllClose) ;
 
     function clickAccorSection() {
         setUnitOpen(x => !x)

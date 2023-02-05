@@ -1,10 +1,10 @@
 // import React, { useEffect } from 'react';
-import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
+// import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
 import { useState , useEffect } from 'react';
 import { useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import styled from 'styled-components';
-import CurriAccordion from '../components/CourseDetail/CurriAccordion';
+// import CurriAccordion from '../components/CourseDetail/CurriAccordion';
 import DetailCurri from '../components/CourseDetail/DetailCurri';
 import DetailIntro from '../components/CourseDetail/DetailIntro';
 import RightCards from '../components/CourseDetail/RightCards';
@@ -32,16 +32,16 @@ function CourseDetail_page(props) {
         
     }
 
-    function handleScroll () {
-        console.log("gogo")
-        if (scrollY > 100) {
-            setScrollY(window.pageYOffset) ;
-            setScrollActive(true) ;                        
-        } else {
-            setScrollY(window.pageYOffset) ;
-            scrollActive(false) ;             
-        }
-    }
+    // function handleScroll () {
+    //     console.log("gogo")
+    //     if (scrollY > 100) {
+    //         setScrollY(window.pageYOffset) ;
+    //         setScrollActive(true) ;                        
+    //     } else {
+    //         setScrollY(window.pageYOffset) ;
+    //         scrollActive(false) ;             
+    //     }
+    // }
 
     // useEffect 
     useEffect(() => {        
