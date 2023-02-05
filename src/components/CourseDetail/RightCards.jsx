@@ -24,7 +24,7 @@ function RightCards({props}) {
                 <div className="courseDetailMid-card_container">
                     <div className="courseDetailCard-top">
                         <div className="courseDetailCard-top_wrap">
-                            <h4 className='courseDetailCard-price'>1000 원</h4>
+                            <h4 className='courseDetailCard-price'>{props.price==0 ? "무료" : props.price+" 원"} </h4>
                             <button type='button'>바로 학습하기</button>
                             <div className="courseDetailCard-subBtn flex">
                                 <span className="courseDetailCard_addFolder flex">
