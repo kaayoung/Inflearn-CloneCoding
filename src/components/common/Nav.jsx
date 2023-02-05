@@ -28,10 +28,10 @@ function Nav(props) {
                     </div>            
                     <ul class="nav-bar_left flex">
                         <Link to="/courseList"><li className="nav-bar_menu">강의</li></Link>
-                        <a href="#"><li className="nav-bar_menu">로드맵</li></a>
-                        <a href="#"><li className="nav-bar_menu">멘토링</li></a>
-                        <a href="#"><li className="nav-bar_menu">커뮤니티</li></a>
-                        <a href="#"><li className="nav-bar_menu">인프런</li></a>
+                        <a href="/"><li className="nav-bar_menu">로드맵</li></a>
+                        <a href="/"><li className="nav-bar_menu">멘토링</li></a>
+                        <a href="/"><li className="nav-bar_menu">커뮤니티</li></a>
+                        <a href="/"><li className="nav-bar_menu">인프런</li></a>
                     </ul>
                 </div>
                 <div className="nav-bar_right flex">
@@ -40,11 +40,11 @@ function Nav(props) {
                         <span><iconify-icon icon="carbon:search"></iconify-icon></span>
                     </div>
                     
-                    <button onClick={openLogin} href="#" className="nav-login">
+                    <button onClick={openLogin} href="/" className="nav-login">
                         로그인
                     </button>
                     <LoginModal open={loginOpen} close={closeLogin} />
-                    <button href="#" className="nav-signup">
+                    <button href="/" className="nav-signup">
                         회원가입
                     </button>
                     
