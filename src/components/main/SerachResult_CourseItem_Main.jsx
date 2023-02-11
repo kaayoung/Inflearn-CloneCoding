@@ -16,8 +16,7 @@ function SerachResult_CourseItem_Main({link , img , title, educator , keyword}) 
                 let temp = (<>{ x}</>)
                 arr.push(temp)
             }
-        })
-        console.log(arr)        
+        })        
         return arr ;
     }
 

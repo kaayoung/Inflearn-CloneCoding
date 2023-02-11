@@ -3,10 +3,13 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../css_file/nav.css'
 import LoginModal from '../SignInOut&LogInOut/LoginModal';
+import { Icon } from '@iconify/react';
+import styled from 'styled-components';
 
-function Nav(props) {
+export default function Nav(props) {
 
     const [loginOpen , setLoginOpen] = useState(false)
+    const [user , setUser] = useState(null)
 
     function openLogin() {
         setLoginOpen(true)
@@ -14,7 +17,9 @@ function Nav(props) {
     function closeLogin() {
         setLoginOpen(false)
     }         
-    
+    function handleLogin(a) {
+        setUser(a)
+    }
 
 
     return (
@@ -40,13 +45,24 @@ function Nav(props) {
                         <span><iconify-icon icon="carbon:search"></iconify-icon></span>
                     </div>
                     
-                    <button onClick={openLogin} href="/" className="nav-login">
-                        로그인
-                    </button>
-                    <LoginModal open={loginOpen} close={closeLogin} />
-                    <button href="/" className="nav-signup">
-                        회원가입
-                    </button>
+                    {user ?
+                        <LoginUser>
+                            <button className='dashboard'>대시보드</button>
+                            <button className='play'><Icon width="25" icon="ph:play-light" /></button>
+                            <button className='shoppingCart'><Icon width="25" icon="ph:shopping-cart-light" /></button>
+                            <button className='profile'><Icon icon="bi:person" width="30" /></button>
+                        </LoginUser>
+                    : (<>
+                            <button onClick={openLogin} href="/" className="nav-login">
+                                로그인
+                            </button> 
+                            <LoginModal loginUser={handleLogin} open={loginOpen} close={closeLogin} />
+                            <button href="/" className="nav-signup">
+                                회원가입
+                            </button> 
+                        </>
+                        )}
+                        
                     
                 </div>                
             </div>
@@ -55,4 +71,15 @@ function Nav(props) {
     );
 }
 
-export default Nav;
+const LoginUser = styled.div`
+    display: flex;
+    button {
+        margin: 0 5px;
+    }
+    .dashboard {
+        font-size: 1.1rem;
+        border: 1px solid #ced4da;
+        border-radius: 10px;
+        padding: 3px 10px;
+    }
+`

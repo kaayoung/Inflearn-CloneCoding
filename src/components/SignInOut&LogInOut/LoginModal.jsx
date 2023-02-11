@@ -1,10 +1,19 @@
-import React from 'react';
 import { useRef } from 'react';
 import styled from 'styled-components';
+import { login } from '../../api/firebase';
 
-function LoginModal({open, close}) {
+function LoginModal({open, close,loginUser}) {
 
     const loginModal = useRef() ;
+
+    function handleLogin() {
+        const loginResult = login() ;
+        loginResult.then((u) => {        
+        loginUser(u)
+        close() ;
+        }
+        )
+    }
 
     function clickOutside(t) {        
         if(t.classList.contains("outside")) {
@@ -47,7 +56,7 @@ function LoginModal({open, close}) {
                                     <span>간편 로그인</span>
                                     <div className="social-wrap">
                                         <button><img src="https://cdn-icons-png.flaticon.com/512/3991/3991999.png" alt="" /></button>
-                                        <button><img src="http://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/5rH/image/aFrEyVpANu07FvoBZQbIB4aF_uc" alt="" /></button>
+                                        <button onClick={handleLogin}><img src="http://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/5rH/image/aFrEyVpANu07FvoBZQbIB4aF_uc" alt="" /></button>
                                         <button><img src="https://cdn-icons-png.flaticon.com/512/5968/5968866.png" alt="" /></button>
                                         <button><img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/facebook_original_logo_icon_146526.png" alt="" /></button>
                                         <button><img src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FuqJpZ%2FbtqyenBIIXx%2Fmh1Cc5F023UGpfQTFBdqV0%2Fimg.jpg" alt="" /></button>
