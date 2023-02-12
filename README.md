@@ -17,10 +17,6 @@ React JS 를 이용하여 인프런 클론 코딩을 한 프로젝트입니다.
 화면 구성 : 메인 페이지 (+로그인 모달창) , 강의 목록 페이지, 강의 상세 페이지ㅣ
 </p>
 
-<p align="center">
-<img width="1622" src="https://user-images.githubusercontent.com/87481901/218296025-b46d6040-4e60-4a87-8704-9cfded00600a.gif">
-</p>
-
 <br>
 
 ## 기술 스택
