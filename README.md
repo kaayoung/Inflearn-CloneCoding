@@ -11,14 +11,14 @@
 
 ## 프로젝트 소개
 
-https://user-images.githubusercontent.com/87481901/218244617-656a3428-8186-46ce-86c5-d93af96a77b8.mov
 
 <p align="justify">
-프로젝트 개요/동기
+React JS 를 이용하여 인프런 클론 코딩을 한 프로젝트입니다.
+화면 구성 : 메인 페이지 (+로그인 모달창) , 강의 목록 페이지, 강의 상세 페이지ㅣ
 </p>
 
 <p align="center">
-GIF Images
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/87481901/218296025-b46d6040-4e60-4a87-8704-9cfded00600a.gif)
 </p>
 
 <br>
@@ -33,13 +33,6 @@ GIF Images
 
 ## 구현 기능
 
-### 기능 1
-
-### 기능 2
-
-### 기능 3
-
-### 기능 4
 
 <br>
 
