@@ -18,7 +18,7 @@ React JS 를 이용하여 인프런 클론 코딩을 한 프로젝트입니다.
 </p>
 
 <p align="center">
-![ezgif com-video-to-gif](https://user-images.githubusercontent.com/87481901/218296025-b46d6040-4e60-4a87-8704-9cfded00600a.gif)
+<img width="1622" src="https://user-images.githubusercontent.com/87481901/218296025-b46d6040-4e60-4a87-8704-9cfded00600a.gif">
 </p>
 
 <br>
